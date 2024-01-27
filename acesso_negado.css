@@ -1,0 +1,40 @@
+    body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .lock {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            height: 100px; /* Ajuste o tamanho conforme necessário */
+            background-image: url('https://jefersonadrianohorn.github.io/imager/cadeado.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: red;
+        }
+
+        .instructions {
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .login-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Cor de fundo do botão (verde) */
+            color: white; /* Cor do texto do botão */
+            border: none;
+            border-radius: 5px;
+        }
