@@ -1,0 +1,68 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100vh;
+    }
+    h1 {
+      color: #4caf50;
+      margin-top: 20px;
+    }
+    p {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #4caf50;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #45a049;
+    }
+    .loader {
+      background: transparent;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #ccc;
+      position: relative;
+      border-radius: 50%;
+      animation: circleRotation 2s linear infinite;
+    }
+    .circle::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #9ae932;
+      box-shadow: 0 0 20px #9ae932, 0 0 60px #9ae932;
+    }
+    @keyframes circleRotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
